@@ -7,7 +7,8 @@ name_on_order = st.text_input("Name on Smoothie")
 st.write("The bame on smoothie is", name_on_order)
 
 # Write directly to the app
-st.title(f"Customize Your Smoothie :beach_umbrella:")
+# st.title("Customize Your Smoothie :beach_umbrella:")
+streamlit.title("Customize Your Smoothie :beach_umbrella:")
 
 cns = st.connection("snowflake")
 session = cnx.session()
